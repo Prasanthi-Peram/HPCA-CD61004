@@ -16,7 +16,7 @@ program barrier
         enddo
     
         do i=1,np-1
-            call mpi_send(msg,1,mpi_integer,0,tag,mpi_comm_world,ierr)
+            call mpi_send(msg,1,mpi_integer,i,tag,mpi_comm_world,ierr)
         enddo
 
     else
