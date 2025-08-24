@@ -20,6 +20,7 @@ last=min(N,(id+1)*stride)
 call random_seed()
 do i=first,last
     call random_number(r)
+    ! Can scale using a+(b-a)*r
     lsum=lsum+r
 enddo
 
